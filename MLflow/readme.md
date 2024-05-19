@@ -21,7 +21,7 @@ python load_model_from_registry.py --model-name "sk_model" --run-id "RUN_ID"
 - [MLflow 서버](http://localhost:5001/) 에 접속하여 저장된 모델의 run 을 클릭하여 run_id 와 model_name 을 확인합니다.
 
 <div align="center">
-  <img src="./images/mlflow-model.png" alt="Join" width="45%" />
+  <img src="./images/mlflow-model.png" alt="Join" />
 </div>
 
 # 접속
