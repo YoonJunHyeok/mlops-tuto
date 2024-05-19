@@ -26,5 +26,5 @@ python load_model_from_registry.py --model-name "sk_model" --run-id "RUN_ID"
 
 # 접속
 
-MLflow 서버: http://localhost:5001/
-MinIO 서버: http://localhost:9001/
+- MLflow 서버: http://localhost:5001/
+- MinIO 서버: http://localhost:9001/
