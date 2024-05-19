@@ -9,7 +9,7 @@ X, y = load_iris(return_X_y=True, as_frame=True)
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, random_state=2024)
 
 # 2. load model
-model_pipeline_load = joblib.load("model_pipeline.joblib")
+model_pipeline_load = joblib.load("model/model_pipeline.joblib")
 
 # 3. validate
 load_train_pred = model_pipeline_load.predict(X_train)

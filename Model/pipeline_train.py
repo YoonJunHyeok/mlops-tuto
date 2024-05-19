@@ -25,4 +25,4 @@ print("Train Accuracy :", train_acc)
 print("Valid Accuracy :", valid_acc)
 
 # 3. save model
-joblib.dump(model_pipeline, "model_pipeline.joblib")
+joblib.dump(model_pipeline, "model/model_pipeline.joblib")

@@ -5,13 +5,13 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 # 1. reproduce data
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data/data.csv")
 X = df.drop(["id", "timestamp", "target"], axis="columns")
 y = df["target"]
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, random_state=2022)
 
 # 2. load model
-pipeline_load = joblib.load("db_pipeline.joblib")
+pipeline_load = joblib.load("model/db_pipeline.joblib")
 
 # 3. validate
 load_train_pred = pipeline_load.predict(X_train)

@@ -29,7 +29,7 @@ print("Train Accuracy :", train_acc)
 print("Valid Accuracy :", valid_acc)
 
 # 3. save model
-joblib.dump(model_pipeline, "db_pipeline.joblib")
+joblib.dump(model_pipeline, "model/db_pipeline.joblib")
 
 # 4. save data
-df.to_csv("data.csv", index=False)
+df.to_csv("data/data.csv", index=False)
