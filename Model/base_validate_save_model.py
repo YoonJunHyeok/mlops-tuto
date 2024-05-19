@@ -8,8 +8,8 @@ X, y = load_iris(return_X_y=True, as_frame=True)
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, random_state=2024)
 
 # 2. load model
-scaler_load = joblib.load("scaler.joblib")
-classifier_load = joblib.load("classifier.joblib")
+scaler_load = joblib.load("model/scaler.joblib")
+classifier_load = joblib.load("model/classifier.joblib")
 
 # 3. validate
 scaled_X_train = scaler_load.transform(X_train)

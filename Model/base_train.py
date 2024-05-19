@@ -28,5 +28,5 @@ print("Train Accuracy :", train_acc)
 print("Valid Accuracy :", valid_acc)
 
 # 3. save model
-joblib.dump(scaler, "scaler.joblib")
-joblib.dump(classifier, "classifier.joblib")
+joblib.dump(scaler, "model/scaler.joblib")
+joblib.dump(classifier, "model/classifier.joblib")
